@@ -79,11 +79,11 @@ app.delete('/delete', function(req, res) {
 
 app.get('/detail/:id', function(req, res) {
     db.collection('post').findOne({ _id : parseInt(req.params.id) }, function(error, result) {
-        console.log(result);
-        if (!result) { return res.send("URL이 잘못되었어요!") };
-        res.render('detail.ejs', {postdata : result});
-    })
-})
+    console.log(result);
+    if (!result) { return res.send('URL이 잘못되었어요!') }
+    res.render('detail.ejs', {postdata : result}); // 요청에 따라 찾은 결과를 postdata라는 이름으로 ejs파일로 보냄.
+});
+});
 
 
 app.get('/edit/:id', function(req, res) {

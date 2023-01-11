@@ -78,8 +78,7 @@
             <ul class="list-group w-auto p-3">
                 <% for(let i = 0; i < postdata.length; i++) { %>
                 <li class="list-group-item">
-                    <input class="form-check-input me-1 mt-3" type="checkbox" value="" id="firstCheckboxStretched">
-                    <label class="form-check-label stretched-link mt-3" for="firstCheckboxStretched"><%= postdata[i].제목 %></label>
+                    <a href="/detail/<%= postdata[i]._id %>" class="form-check-label stretched-link fs-5 mt-3" style="color: black; text-decoration: none;" for="firstCheckboxStretched"><%= postdata[i].제목 %></a>
                     <p class="mb-1 mt-3" style="color: tan;"><%= postdata[i].날짜 %></p>
 
                     <!-- btn -->
