@@ -5,7 +5,7 @@
 ![주요 페이지 이미지](./nodejs_todolist.png)
 > Todo List의 주요 페이지 이미지
 
-**NodeJS**를 기반으로 **ejs문법**을 사용하여 만든 **Todo List** 입니다.
+**NodeJS**를 기반으로 **ejs**문법을 사용하여 만든 **Todo List** 입니다.
 
 사용자가 자주 방문하는 Todo list의 특성을 반영하여, 따뜻한 색상을 사용하여 페이지를 구현하였습니다.
 
